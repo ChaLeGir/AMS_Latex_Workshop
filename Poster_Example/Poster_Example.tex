@@ -45,17 +45,6 @@
 \usepackage{caption}
 \captionsetup{belowskip=3pt,aboveskip=3pt}
 
-%%%%%%%%%% Custom Colors  %%%%%%%%%%%%%%
-\usepackage[dvipsnames]{xcolor}
-
-%% Mines Color
-\input{MinesColors.tex}
-\input{Definitions.tex}
-
-\pdfstringdefDisableCommands{%
-\def\translate#1{#1}%
-}
-
 % ====================
 % Lengths
 % ====================
@@ -142,10 +131,10 @@
 
 \begin{block}{Background}
 \begin{itemize}[topsep=-4pt, partopsep=0pt, parsep=0pt, itemsep=4pt]
-	\item[\large\color{blasterBlue}$\bullet$] Normally, you can add some exposition about your project here. 
-	\item[\large\color{blasterBlue}$\bullet$] Use bullet points as much as possible. 
-	\item[\large\color{blasterBlue}$\bullet$]  Cite your resources used, defined everything you need \cite{PlaceHolderSource}. 
-	\item[\large\color{blasterBlue}$\bullet$] Here's how you write an equation that you can cite later:
+	\item[\large\color{red}$\bullet$] Normally, you can add some exposition about your project here. 
+	\item[\large\color{red}$\bullet$] Use bullet points as much as possible. 
+	\item[\large\color{red}$\bullet$]  Cite your resources used, defined everything you need \cite{PlaceHolderSource}. 
+	\item[\large\color{red}$\bullet$] Here's how you write an equation that you can cite later:
 	\begin{equation}
 	\widehat{Q} = g^{\theta}(u, x, A),
 	\label{eq:1}
@@ -156,7 +145,7 @@
 % add some vertical space. 
 \vspace{0.5in}
 
-If you would like to make a diagram, consider using free resources like \textcolor{redFlannel}{draw.io} or Power Point. And cite equation like this Equation \ref{eq:1}.
+If you would like to make a diagram, consider using free resources like \textcolor{pink}{draw.io} or Power Point. And cite equation like this Equation \ref{eq:1}.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\linewidth]{Images/NH-dCFEDiagram.png}
@@ -195,8 +184,8 @@ If you like Figure \ref{fig:NH-dCFEDiagram}, but want it smaller, you can change
 Do not include pictures that are screenshots if possible. They usually do not scale well in a poster, and they can make you look less professional.  Ways to remedy this:
 
 \begin{itemize}
-	\item[\large\color{blasterBlue}$\bullet$] Use \texttt{pdf()} or \texttt{png()} in R. 
-	\item[\large\color{blasterBlue}$\bullet$] Use \texttt{savefig()} or similar in Python to save as \texttt{.png} or \texttt{.pdf} or \texttt{.svg}. 
+	\item[\large\color{red}$\bullet$] Use \texttt{pdf()} or \texttt{png()} in R. 
+	\item[\large\color{red}$\bullet$] Use \texttt{savefig()} or similar in Python to save as \texttt{.png} or \texttt{.pdf} or \texttt{.svg}. 
 \end{itemize}
 
 But PDFs/SVGs are generally preferred since they are vector based, but sometimes this doesn't make sense. 
@@ -243,18 +232,18 @@ PDFs can sometimes be much more storage efficient.
 \begin{block}{Summary}
 \textbf{How to write this part:}
 	\begin{itemize}
-		\item[\textcolor{blasterBlue}{\bullet}] Some advisors suggest a success/challenges summary. Some might do other formats. 		
-		\item[\textcolor{blasterBlue}{\bullet}] But in general, you should summarize what you have achieved in your work and what is novel. 
-		\item[\textcolor{blasterBlue}{\bullet}] Including any packages, papers etc. 
+		\item[\textcolor{red}{\bullet}] Some advisors suggest a success/challenges summary. Some might do other formats. 		
+		\item[\textcolor{red}{\bullet}] But in general, you should summarize what you have achieved in your work and what is novel. 
+		\item[\textcolor{red}{\bullet}] Including any packages, papers etc. 
 	\end{itemize}
 \vspace{0.5cm}
 \begin{columns}
  	\begin{column}{0.73\textwidth}
 	\textbf{Splitting into 2 columns:}
 \begin{itemize}
-	\item[\textcolor{blasterBlue}{\bullet}] You can split this summary column into more columns to give you more creative freedom. 
-	\item[\textcolor{blasterBlue}{\bullet}] This is how you do it. 
-	\item[\textcolor{blasterBlue}{\bullet}] Be mindful on size of the plot and whatever you choose to put on the other side of it, they can look bad if not balanced correctly. 
+	\item[\textcolor{red}{\bullet}] You can split this summary column into more columns to give you more creative freedom. 
+	\item[\textcolor{red}{\bullet}] This is how you do it. 
+	\item[\textcolor{red}{\bullet}] Be mindful on size of the plot and whatever you choose to put on the other side of it, they can look bad if not balanced correctly. 
 	\end{itemize}
 	\end{column}
 	
@@ -272,15 +261,14 @@ PDFs can sometimes be much more storage efficient.
 
 \begin{block}{Future Work}
 \begin{itemize}
-	\item[\textcolor{blasterBlue}{\bullet}] Put something here.
-	\item[\textcolor{blasterBlue}{\bullet}] Refine code.... 
-	\item[\textcolor{blasterBlue}{\bullet}] Something else
+	\item[\textcolor{red}{\bullet}] Put something here.
+	\item[\textcolor{red}{\bullet}] Refine code.... 
+	\item[\textcolor{red}{\bullet}] Something else
 \end{itemize}
 You might need to compile this with LuaLaTeX. 
 \end{block}
 
 \begin{block}{References}
-%\nocite{*}
 \footnotesize{\bibliographystyle{abbrv}\bibliography{Sources}}
 \end{block}
 \end{column}
