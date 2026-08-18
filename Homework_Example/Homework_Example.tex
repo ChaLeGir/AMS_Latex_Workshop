@@ -18,9 +18,6 @@
 \usepackage{arydshln}
 \usepackage[framemethod=TikZ]{mdframed}
 
-\input{MinesColors.tex}
-\input{Definitions.tex}
-
 \newtheorem*{remark}{Remark}
 \newtheorem{definition}{Definition}
 \newtheorem{theorem}{Theorem}
@@ -48,7 +45,7 @@ Your Name
 
 \vspace{0.1in}
 \subsubsection*{Some background: }
-Let $\bz$ be distributed $MN(0,I_m)$ then we know that $\bz^T \bz = \sum_{i=1}^m \bz_i^2$ is distributed $\chi^2(m)$.  -- a sum of iid $N(0,1)$ RVs. 
+Let $\mathbf{z}$ be distributed $MN(0,I_m)$ then we know that $\mathbf{z}^T \mathbf{z} = \sum_{i=1}^m \mathbf{z}_i^2$ is distributed $\chi^2(m)$.  -- a sum of iid $N(0,1)$ RVs. 
   (We also know that $\chi^2(m)$ is a member of the gamma distribution family with shape $2m$ and scale $2$.)
 
 \begin{enumerate}
@@ -56,9 +53,9 @@ Let $\bz$ be distributed $MN(0,I_m)$ then we know that $\bz^T \bz = \sum_{i=1}^m
 Let $M$ be an $n\times n$  projection matrix and let $k$ be the dimension of the subspace that $M$ projects onto. 
  
 \begin{enumerate}
-	\item For  the eigendecomposition $M= U D U^T$   show that the diagonal elements of $D$ must be either $0$ or $1$.\\ {\it \color{magenta} This is provides an alternative proof that $tr(M) =k$. }
-	\item Let  $U$ be an $n \times n$ orthonormal matrix and $\bz$ be distributed $MN(0,I_n)$. Show that $U^T\bz$ is also  distributed $MN(0,I_n)$.
-	\item Let $\bz$ be distributed $MN(0,I_n)$  show that  $\bz^T M \bz $ is  distributed $\chi^2(k)$.
+	\item For  the eigendecomposition $M= U D U^T$   show that the diagonal elements of $D$ must be either $0$ or $1$.\\ {\it \color{pink} This is provides an alternative proof that $tr(M) =k$. }
+	\item Let  $U$ be an $n \times n$ orthonormal matrix and $\mathbf{z}$ be distributed $MN(0,I_n)$. Show that $U^T\mathbf{z}$ is also  distributed $MN(0,I_n)$.
+	\item Let $\mathbf{z}$ be distributed $MN(0,I_n)$  show that  $\mathbf{z}^T M \mathbf{z} $ is  distributed $\chi^2(k)$.
 \end{enumerate}
 
 \noindent\rule{0.9\textwidth}{0.75pt}
@@ -68,11 +65,11 @@ Let $M$ be an $n\times n$  projection matrix and let $k$ be the dimension of the
 	\item We use the fact that... 
 	\begin{align*}
 		XXXXXXXX &= \text{Something else here}  \\
-		XXXXXXXX &= UDU\T
+		XXXXXXXX &= UDU^T
 	\end{align*}
 	We can see that ...., therefore diagonal elements of $D$ must be either $0$ or $1$. $\qquad \square$
 	
-	\item $U\T \bz $ satisfies the definition that says $XXXXXX \qquad \square$
+	\item $U^T \mathbf{z} $ satisfies the definition that says $XXXXXX \qquad \square$
 	\item \textcolor{coloradoRed}{Comments: \\ When writing proofs, make sure to say Q.E.D. or $\square$ to complete the proof. This symbol that ends the proof should be the last thing on that homework sub-problem. When writing equations, make sure to align all equal signs. Keep every sub-part of the problem on the same page if possible. }
 
 \clearpage

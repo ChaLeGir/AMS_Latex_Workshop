@@ -8,10 +8,10 @@
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{multimedia}
-\usepackage{algorithm} % optional, for algorithms
+\usepackage{algorithm} % optional, for algorithms 
 \usepackage{bbm}
 
-% Mines colors & personalized definitions
+% Mines colors & personalized definitions, totally optional. Some of the slide items use these. 
 \usepackage{xcolor}
 \input{Definitions.tex}
 \input{MinesColors.tex}
@@ -22,7 +22,7 @@
 \addbibresource{Sources.bib}
 
 %------------------------------------------ Title Page ---------------------------------------%
-\title[AMS Latex Workshop 2025]{2025 AMS Bootcamp \\ Latex Workshop}
+\title[AMS Latex Workshop]{AMS Bootcamp \\ Latex Workshop}
 %\subtitle{Poster Speed Talk}
 \author[Li] {Ziyu Li\inst{1}}
 \institute[Mines]
@@ -134,11 +134,14 @@
 	\pause
 	\begin{enumerate}
 		\item \textbf{Setup} \\
-		Go to GitHub link: \url{github.com/ziyuli22/2025_AMS_Latex_Workshop} \\
-		and download folder. Log into Overleaf account, upload folder. 
+		Go to GitHub link: \url{github.com/ziyuli22/AMS_Latex_Workshop} \\
+		and download folder. Log into Overleaf account, upload folder. \\
+		\textbf{OR}\\
+		Download this folder from Canvas. Log into Overleaf, upload folder. 
 		\item \textbf{Common homework commands \& expectations}
 		\item \textbf{Poster example}
 		\item \textbf{Presentation example}
+		\item \textbf{Manuscripts Tips}
 	\end{enumerate}
 \end{frame}
 
@@ -148,7 +151,7 @@
 \begin{frame}
 	\frametitle{Template Example}
 	\centering
-	{\Large Click on \texttt{Homework\_Example.tex}}
+	{\Large Go to Homework\_Example folder. \\ Click on \texttt{Homework\_Example.tex}}
 \end{frame}
 
 %------------------------------ Poster Template Section ---------------------------%
@@ -157,7 +160,7 @@
 \begin{frame}
 	\frametitle{Poster Example}
 	\centering
-	{\Large Click on \texttt{Poster\_Example.tex}}
+	{\Large Go to Poster\_Example folder. \\ Click on \texttt{Poster\_Example.tex}}
 \end{frame}
 
 
@@ -204,13 +207,29 @@
 	
 \end{frame}
 
-%\appendix
+\section{Manuscripts}
+\begin{frame}
+	\frametitle{Manuscripts Overview}
+	\begin{itemize}
+		\item Most journals have templates that you can use.
+		\begin{itemize}
+			\item EVERYTHING as files in one folder, including figures. 
+			\item Be mindful of file management and clear naming. 
+			\item Special commands from journal template, and sources management can be tricky. 
+		\end{itemize}
+		\item Slightly easier to debug and upload to journal or ArXiv if you use off-line complier (imo). 
+		\item Be mindful of readability and use safe colors. 
+	\end{itemize}
+\end{frame}
+%references
 
 \begin{frame}
 \frametitle{References}
 	\AtNextBibliography{\tiny}
 	\printbibliography
 \end{frame}
+
+
 
 \section*{Extras}
 \begin{frame}
