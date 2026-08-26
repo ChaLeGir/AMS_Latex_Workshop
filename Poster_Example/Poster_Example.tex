@@ -67,7 +67,7 @@
 
 
 
-% ---------------------------- Poster Title ---------------------------$
+% ---------------------------- Poster Title ---------------------------
 \title{Example of Generic Mines Poster with Some Tips \\ to Use for Your Conferences!}
 
 
@@ -132,8 +132,8 @@
 \begin{block}{Background}
 \begin{itemize}[topsep=-4pt, partopsep=0pt, parsep=0pt, itemsep=4pt]
 	\item[\large\color{red}$\bullet$] Normally, you can add some exposition about your project here. 
-	\item[\large\color{red}$\bullet$] Use bullet points as much as possible. 
-	\item[\large\color{red}$\bullet$]  Cite your resources used, defined everything you need \cite{PlaceHolderSource}. 
+	\item[\large\color{red}$\bullet$] Use bullet points as much as possible. \typeout{=== MARKER A ===}
+	\item[\large\color{red}$\bullet$]  Cite your resources used, defined everything you need \cite{PlaceHolderSource}. \typeout{=== MARKER B ===}
 	\item[\large\color{red}$\bullet$] Here's how you write an equation that you can cite later:
 	\begin{equation}
 	\widehat{Q} = g^{\theta}(u, x, A),
@@ -145,7 +145,7 @@
 % add some vertical space. 
 \vspace{0.5in}
 
-If you would like to make a diagram, consider using free resources like \textcolor{pink}{draw.io} or Power Point. And cite equation like this Equation \ref{eq:1}.
+If you would like to make a diagram, consider using free resources like \textcolor{pink}{draw.io} or Power Point. And cite equation like this Equation \ref{eq:1}. \typeout{=== MARKER C ===}
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\linewidth]{Images/NH-dCFEDiagram.png}
@@ -155,7 +155,7 @@ If you would like to make a diagram, consider using free resources like \textcol
 \end{figure} 
 
 \textbf{Usually, your problem statement or project goal will be around here. }
-\end{block}
+\end{block} \typeout{=== MARKER D ===}
 
 \begin{block}{Adjusting Size of Plots}
 If you like Figure \ref{fig:NH-dCFEDiagram}, but want it smaller, you can change the \texttt{width} by scaling by \texttt{linewidth}. If no \texttt{height} variable was chosen, the aspect ratio will be kept. 
@@ -168,7 +168,7 @@ If you like Figure \ref{fig:NH-dCFEDiagram}, but want it smaller, you can change
 	\label{fig:NH-dCFEDiagram_small}
 \end{figure} 
 
-\end{block}
+\end{block} \typeout{=== MARKER E ===}
 
  
 \end{column}
@@ -179,7 +179,7 @@ If you like Figure \ref{fig:NH-dCFEDiagram}, but want it smaller, you can change
 
 \begin{center}
 {\huge \textcolor{red}{\textbf{DO NOT SCREENSHOT PLOTS!}}}
-\end{center}
+\end{center} \typeout{=== MARKER F ===}
 
 Do not include pictures that are screenshots if possible. They usually do not scale well in a poster, and they can make you look less professional.  Ways to remedy this:
 
@@ -195,7 +195,7 @@ But PDFs/SVGs are generally preferred since they are vector based, but sometimes
 	\caption{This plot is a pdf, and alone has the size of 11.7MB. This is because these are surfaces constructed by millions of individual points. }
 	\label{fig:RainfallPDF}
 \end{figure} 
-
+\typeout{=== MARKER G ===}
 % decrease space between plots. 
 \vspace{-1cm}
 
@@ -212,38 +212,41 @@ The PNG version is less vibrant but a lot smaller in size, which means it opens 
 \end{block}
 
 \end{column}
-
+\typeout{=== MARKER H ===}
 
 \separatorcolumn
 \begin{column}{\colwidth}
 
 \begin{block}{PDF/SVG or PNG? Continued}
-
+\typeout{=== MARKER Ha ===}
 PDFs can sometimes be much more storage efficient. 
 \begin{figure}[h]
-	\centering
+	\centering \typeout{=== MARKER Hb ===}
 	\includegraphics[width=0.9\linewidth]{Images/RainfallPredictionComparison_PosterVer_B.pdf}
+	\typeout{=== MARKER Hc ===}
 	\caption{This plot is a pdf, and is 5kB in size.  The png version of this with similar resolution will be around 200 kB to start. }
 	\label{fig:Histogram}
 \end{figure} 
-
+\typeout{=== MARKER Hd ===}
 \end{block}
 
 \begin{block}{Summary}
 \textbf{How to write this part:}
-	\begin{itemize}
-		\item[\textcolor{red}{\bullet}] Some advisors suggest a success/challenges summary. Some might do other formats. 		
-		\item[\textcolor{red}{\bullet}] But in general, you should summarize what you have achieved in your work and what is novel. 
-		\item[\textcolor{red}{\bullet}] Including any packages, papers etc. 
+	\begin{itemize} \typeout{=== MARKER He ===}
+		\item[\textcolor{red}{$\bullet$}] Some advisors suggest a success/challenges summary. Some might do other formats. 		
+		\item[\textcolor{red}{$\bullet$}] But in general, you should summarize what you have achieved in your work and what is novel. 
+		\item[\textcolor{red}{$\bullet$}] Including any packages, papers etc. 
 	\end{itemize}
+	\typeout{=== MARKER Hf ===}
 \vspace{0.5cm}
-\begin{columns}
+\typeout{=== MARKER Hg ===}
+\begin{columns}\typeout{=== MARKER I ===}
  	\begin{column}{0.73\textwidth}
 	\textbf{Splitting into 2 columns:}
 \begin{itemize}
-	\item[\textcolor{red}{\bullet}] You can split this summary column into more columns to give you more creative freedom. 
-	\item[\textcolor{red}{\bullet}] This is how you do it. 
-	\item[\textcolor{red}{\bullet}] Be mindful on size of the plot and whatever you choose to put on the other side of it, they can look bad if not balanced correctly. 
+	\item[\textcolor{red}{$\bullet$}] You can split this summary column into more columns to give you more creative freedom. 
+	\item[\textcolor{red}{$\bullet$}] This is how you do it. 
+	\item[\textcolor{red}{$\bullet$}] Be mindful on size of the plot and whatever you choose to put on the other side of it, they can look bad if not balanced correctly. 
 	\end{itemize}
 	\end{column}
 	
@@ -256,20 +259,23 @@ PDFs can sometimes be much more storage efficient.
 \end{figure} 
 	\end{column}
 \end{columns}
-
+\typeout{=== MARKER J ===}
 \end{block}
 
 \begin{block}{Future Work}
 \begin{itemize}
-	\item[\textcolor{red}{\bullet}] Put something here.
-	\item[\textcolor{red}{\bullet}] Refine code.... 
-	\item[\textcolor{red}{\bullet}] Something else
+	\item[\textcolor{red}{$\bullet$}] Put something here.
+	\item[\textcolor{red}{$\bullet$}] Refine code.... 
+	\item[\textcolor{red}{$\bullet$}] Something else
 \end{itemize}
+\typeout{=== MARKER K ===}
 You might need to compile this with LuaLaTeX. 
 \end{block}
 
+\typeout{=== REACHED BIBLIOGRAPHY ===}
+
 \begin{block}{References}
-\footnotesize{\bibliographystyle{abbrv}\bibliography{Sources}}
+	\footnotesize{\bibliographystyle{abbrv}\bibliography{Sources}}
 \end{block}
 \end{column}
 
